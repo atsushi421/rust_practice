@@ -1,20 +1,7 @@
 fn solve_fizz_buzz() -> Vec<String> {
     let mut result: Vec<String> = Vec::new();
 
-    for i in 1..=100 {
-        if i % 3 == 0 && i % 5 == 0 {
-            result.push("FizzBuzz".to_string());
-        }
-        else if i % 3 == 0 {
-            result.push("Fizz".to_string());
-        }
-        else if i % 5 == 0 {
-            result.push("Buzz".to_string());
-        }
-        else {
-            result.push(i.to_string());
-        }
-    }
+    todo!();
 
     result
 }
