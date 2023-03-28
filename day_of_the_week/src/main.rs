@@ -1,27 +1,3 @@
-enum Dow {
-    Monday,
-    Tuesday,
-    Wednesday,
-    Thursday,
-    Friday,
-    Sarurday,
-    Sunday,
-}
-
-impl Dow {
-    fn get_kanji_strokes(&self) -> isize {
-        match self {
-            Dow::Monday => 4,
-            Dow::Tuesday => 4,
-            Dow::Wednesday => 4,
-            Dow::Thursday => 4,
-            Dow::Friday => 8,
-            Dow::Sarurday => 3,
-            Dow::Sunday => 4,
-        }
-    }
-}
-
 fn main() {
     unimplemented!();
 }
