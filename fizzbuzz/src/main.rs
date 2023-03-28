@@ -14,7 +14,7 @@ fn main() {
 }
 
 # [test]
-fn test_main() {
+fn test_solve_fizz_buzz() {
     assert_eq!(
         solve_fizz_buzz(),
         [
