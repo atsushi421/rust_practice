@@ -11,17 +11,6 @@ struct Coffee {
     weight_g: i32,
 }
 
-impl Add for Coffee {
-    type Output = Coffee;
-    fn add(self, rhs: Self) -> Self::Output {
-        Coffee {ml: rhs.ml + self.ml, weight_g: rhs.weight_g + self.weight_g}
-    }
-}
-
-fn my_add<T: Add<Output = T>>(right: T, left: T) -> T {
-    right + left
-}
-
 # [test]
 fn test_add_coffee() {
     let coffee1 = Coffee {ml: 500, weight_g: 300};
