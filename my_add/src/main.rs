@@ -31,14 +31,3 @@ fn test_add_coffee() {
     assert_eq!(added_coffee.ml, 650);
     assert_eq!(added_coffee.weight_g, 450);
 }
-
-# [test]
-fn test_my_add_trait_bound() {
-    struct NotImplAdd {
-        tmp: i32,
-    }
-    let tmp1 = NotImplAdd {tmp: 10};
-    let tmp2 = NotImplAdd {tmp: 5};
-
-    my_add::<NotImplAdd>(tmp1, tmp2);
-}
